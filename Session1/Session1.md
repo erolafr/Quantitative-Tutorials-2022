@@ -49,7 +49,7 @@ re-executed at any time (Rüeger & Allie 2019).
 
 - The essence: “Computational Empathy”
 
-### 1. Meet RStudio interface
+### 1. Meet the RStudio interface
 
 It is assumed that you have R and RStudio installed at this point. If
 not, revise: <https://rstudio-education.github.io/hopr/starting.html>.
@@ -83,6 +83,21 @@ R is case-sensitive:
 # Ten
 ```
 
+We don’t need the “ten” object anymore, how can we remove it from our
+environment to release memory?
+
+``` r
+# Find a way to remove the "ten object"
+
+#TBC
+```
+
+R has multiple data structures: By increasing complexity: vector,
+matrix, list, dataframe. See illustration from
+[here](http://venus.ifca.unican.es/Rintro/dataStruct.html):
+
+![](images/dataStructuresNew.png)
+
 ### 3. Don’t get lost with the multiple formats: Rscript, Rmd, md, RData, RProject, R package
 
 - Do you know the differences of the different mentioned formats?
@@ -96,74 +111,121 @@ R is case-sensitive:
 ### 4. Starting hard: Import your data
 
 It is very common to start learning R by generating data. Which ways do
-you know for data generation?
+you know for data generation? I prefer start directly from importing
+your own data. There are several ways to do it. Could you find one?
 
-I prefer start directly from importing your own data.
+Import here the csv and and Excel dataset that you’ll find in the
+Session1/data github folder. Did you need any additional packages?
 
-library(“readxl”)
+``` r
+# Import a CSV: BROT2_dat.csv
+# TBC
 
-setwd(“C:/Users/erola/OneDrive - Universitat de
-Barcelona/4_Curs2021/2005 Betalaines/BKG”)
+# Import an Excel file: BROT_SeedMassGrowthForm.xlsx
+# TBC
+```
 
-dades \<- read_excel(“testmodelsPytonNONA04.xlsx”)
+The BROT 2.0 dataset from Tavşanoğlu and Pausas 2018 can be found
+[here](https://figshare.com/collections/BROT_2_0_A_functional_trait_database_for_Mediterranean_Basin_plants/3843841),
+BROT is a database of pant functional traits for the Mediterranean Basin
+flora. It includes 25764 records of 44 traits from 2457 plant taxa
+distributed in 119 taxonomic families. Find [here the
+publication](https://www.nature.com/articles/sdata2018135). The Excel
+file is a processed subset of this database with the values of seedMass
+and growth form for all species in BROT 2.0. In the following image you
+can see a picture I toke near Cap de Creus at the mediterranean Basin
+(A), and the Geographical scope of the database in the Mediterranean
+Basin, extracted from Figure 2 in [Tavşanoğlu and Pausas
+2018](https://www.nature.com/articles/sdata2018135).
 
-### 5. See your data:
+![](images/FigBROTContext.png)
 
-View(dades) summary(dades) str(dades) names(dades)
+### 5. Take a look to the data
 
-### 6. Acces your variables:
+Play on your own with the data you’ve imported. Test the following
+functions and writte down what do they do:
 
-dades\$Bet
+``` r
+#View()
+# TBC
+```
+
+``` r
+#summary()
+# TBC
+```
+
+``` r
+#names()
+# TBC
+```
+
+``` r
+#str()
+# TBC
+```
+
+``` r
+#head()
+# TBC
+```
+
+Explore the data, find the dataset lenght and the minimum and maximum of
+a variable.
+
+``` r
+# TBC
+```
+
+### 6. Access your variables:
+
+There are multiple ways to access the variables of a dataset. Generally
+by index or by name. Remember R indexes from 1 (Python indexes from 0).
+
+``` r
+# datasetName$datasetVariable
+# TBC
+```
+
+``` r
+#datasetName[,VariablePosition]
+# TBC
+```
 
 ### 7. Plot your variables:
 
-hist(dades\$Bet)
+Prepare a plot of a variable, you can choose an histogram, boxplot,
+barplot, scatterplot, etc. Choose a plot and try to make it here:
 
-### 8. Let’s plot two variables:
+``` r
+#TBC
+```
 
-plot(dades$Bet ~ dades$red)
-
-### 9. ADVANTAGES OF USING R: Automatization:
-
-dades\<- as.data.frame(dades)
-
-for (i in 2:length(dades)) { a \<-
-cor.test(dades$Bet, dades[,i]) print(paste(colnames(dades)[i], " est:", a$estimate,
-” p=value:“, a\$p.value)) }
-
-### 10. ANOVA
-
-res.aov \<- aov(V \~ time*temp*medi\*imb, data = test) summary(res.aov)
-TukeyHSD(res.aov)
-
-install.packages(“agricolae”) library(agricolae)
-
-(HSD.test(res.aov, “medi”))
-
-### 11. BEAUTIFUL PLOTS
-
+Creating a good visualization is an art. You can see some examples here:
 <https://www.r-graph-gallery.com/>
 
-library(ggplot2)
+### 8. Common problems
 
-ggplot(dades, aes(x=Bet, y=red) ) + geom_hex(bins = 10) +
-scale_fill_continuous(type = “viridis”) + theme_bw()
+- Missing data. What is missing data? It depends on the experiment.
+  Usually labeled as “NAs” –\> Use na.action() or na.rm(). Very common
+  for certain analysis: df \<- df\[complete.cases(df), \]
 
-ggplot(dades, aes(x=Bet, y=red) ) + stat_density_2d(aes(fill =
-..level..), geom = “polygon”)
+- I have categorical variables classified as numbers–\> Transform it
+  into a factor with as.factor(). Check always your variable type with
+  str().
 
-### 12. COMMON PROBLEMS
+- I have a warning and I don’t understand why –\> Paste the warning in
+  google
 
-I have “NAs” –\> Use na.action() or na.rm() in your function.
+- A package is not working –\> Is it activated (library)? It may be out
+  of date? Re-install it.
 
-POSAR COM FER COMPLETE CASES!!!!!
+### 9. Your Data Science project
 
-I have categorical variables classified as numbers–\> Transform it into
-a factor with as.factor()
+Data is more available than ever
 
-I have a warning and I don’t understand why –\> Paste the warning in
-google
+<https://www.kaggle.com/datasets>
 
-A package is not working –\> it may be out of date? Re-install it.
+<https://archive.ics.uci.edu/ml/index.php>
 
-### 13. Your Data Science project
+<https://www.data.gov.uk/search?filters%5Btopic%5D=Environment>

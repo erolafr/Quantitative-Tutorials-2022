@@ -14,8 +14,8 @@ skills. This first session will help us to standardize the general R
 programming level, and revise the concepts of the data analysis workflow
 (import data, data wrangling, visualization, the data life-cycle).
 
-*Data analysis* is a term that describes the process of turning raw data
-into knowledge. [Grolemund & Wickham,
+**Data analysis** is a term that describes the process of turning raw
+data into knowledge. [Grolemund & Wickham,
 2017](https://r4ds.had.co.nz/workflow-basics.html) presented this as a
 diagram:
 
@@ -32,10 +32,10 @@ accurate:
 2019](images/DataWorkflow_Grolemund&Wickham2017REAL.jpeg)
 
 Data wrangling and data analysis in general is rarely a linear process.
-It is instead a back and forth between modules. Therefore, *flexibility*
-in moving between these modules with software, along with *automation*
-is important. This can be achieved with written programs that can be
-re-executed at any time (Rüeger & Allie 2019).
+It is instead a back and forth between modules. Therefore,
+**flexibility** in moving between these modules with software, along
+with *automation* is important. This can be achieved with written
+programs that can be re-executed at any time (Rüeger & Allie 2019).
 
 ### 0. Prior questions
 
@@ -58,8 +58,9 @@ File/Plots.
 
 ### 2. R is a calculator with enormous memory
 
-R is basically nothing more than a calculator, but it’s open-access,
-flexibility and the great community using it is what captivated us all.
+R is basically nothing more than a calculator, but it’s **open-access**,
+**flexibility** and the **huge community** using it is what captivated
+us all.
 
 ``` r
 # The hash symbol is used to create comments
@@ -92,7 +93,7 @@ environment to release memory?
 #TBC
 ```
 
-R has multiple data structures: By increasing complexity: vector,
+R has multiple **data structures**: By increasing complexity: vector,
 matrix, list, dataframe. See illustration from
 [here](http://venus.ifca.unican.es/Rintro/dataStruct.html):
 
@@ -100,13 +101,13 @@ matrix, list, dataframe. See illustration from
 
 ### 3. Don’t get lost with the multiple formats: Rscript, Rmd, md, RData, RProject, R package
 
-- Do you know the differences of the different mentioned formats?
+- Do you know the **differences** of the different mentioned formats?
 
-- When would you use each?
+- **When** would you use each?
 
-- Get used to R markdown files type
+- Get used to **R markdown files** type
 
-- Did you know about [GitHub](https://github.com/erolafr)?
+- Did you know about **[GitHub](https://github.com/erolafr)**?
 
 ### 4. Starting hard: Import your data
 
@@ -114,7 +115,7 @@ It is very common to start learning R by generating data. Which ways do
 you know for data generation? I prefer start directly from importing
 your own data. There are several ways to do it. Could you find one?
 
-Import here the csv and and Excel dataset that you’ll find in the
+**Import here the csv and and Excel dataset** that you’ll find in the
 Session1/data github folder. Did you need any additional packages?
 
 ``` r
@@ -142,8 +143,8 @@ Basin, extracted from Figure 2 in [Tavşanoğlu and Pausas
 
 ### 5. Take a look to the data
 
-Play on your own with the data you’ve imported. Test the following
-functions and writte down what do they do:
+Play on your own with the data you’ve imported. Test the **following
+functions** and write down what do they do:
 
 ``` r
 #View()
@@ -179,8 +180,9 @@ a variable.
 
 ### 6. Access your variables:
 
-There are multiple ways to access the variables of a dataset. Generally
-by index or by name. Remember R indexes from 1 (Python indexes from 0).
+There are multiple ways to **access the variables of a dataset**.
+Generally by index or by name. Remember R indexes from 1 (Python indexes
+from 0).
 
 ``` r
 # datasetName$datasetVariable
@@ -194,15 +196,15 @@ by index or by name. Remember R indexes from 1 (Python indexes from 0).
 
 ### 7. Plot your variables:
 
-Prepare a plot of a variable, you can choose an histogram, boxplot,
+Prepare a **plot of a variable**, you can choose an histogram, boxplot,
 barplot, scatterplot, etc. Choose a plot and try to make it here:
 
 ``` r
 #TBC
 ```
 
-Creating a good visualization is an art. You can see some examples here:
-<https://www.r-graph-gallery.com/>
+Creating a **good visualization is an art**. You can see some examples
+here: <https://www.r-graph-gallery.com/>
 
 ### 8. Common problems
 
@@ -222,10 +224,27 @@ Creating a good visualization is an art. You can see some examples here:
 
 ### 9. Your Data Science project
 
-Data is more available than ever
+To learn while working on a real data science problem I purpose here
+that you **find a dataset** that you have a particular interest on and
+use it for the upcoming sessions. This will help us find real problems
+that need to be solved with diverse data science tools. Data is more
+available than ever. You can both create a dataset of your own (it must
+include at least 50 observations and five categorical and/or numerical
+variables) or choose a public dataset online. Here you can find some
+dataset repositories:
 
-<https://www.kaggle.com/datasets>
+- Kaggle: <https://www.kaggle.com/datasets>
 
-<https://archive.ics.uci.edu/ml/index.php>
+- UCI: <https://archive.ics.uci.edu/ml/index.php>
 
-<https://www.data.gov.uk/search?filters%5Btopic%5D=Environment>
+- UK Open Data:
+  <https://www.data.gov.uk/search?filters%5Btopic%5D=Environment>
+
+- Data.world: <https://data.world/datasets/environment>
+
+Choose a dataset, download it and **for the next session**:
+
+- 1.  Write a RScript to import the dataset
+
+- 2.  Identify a numerical and a categorical variables from your
+      dataset.

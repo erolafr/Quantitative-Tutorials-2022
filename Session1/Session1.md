@@ -1,7 +1,7 @@
 
 # Session 1 - Quantitative Tutorials
 
-## Week 5 - R basics and Data Analysis workflow
+## Week 3 - R basics and Data Analysis workflow
 
 Dr. Erola Fenollosa (she/her)
 

@@ -4,7 +4,7 @@ output: rmarkdown::github_document
 
 # Session 1 - Quantitative Tutorials
 
-## Week 5 - R basics and Data Analysis workflow
+## Week 3 - R basics and Data Analysis workflow
 
 Dr. Erola Fenollosa (she/her)
 
@@ -74,7 +74,6 @@ R has multiple **data structures**: By increasing complexity: vector, matrix, li
 
 ![](images/dataStructuresNew.png)
 
-
 ### 3. Don't get lost with the multiple formats: Rscript, Rmd, md, RData, RProject, R package
 
 -   Do you know the **differences** of the different mentioned formats?
@@ -83,7 +82,7 @@ R has multiple **data structures**: By increasing complexity: vector, matrix, li
 
 -   Get used to **R markdown files** type
 
--   Did you know about **[GitHub](https://github.com/erolafr)**?
+-   Did you know about [**GitHub**](https://github.com/erolafr)?
 
 ### 4. Starting hard: Import your data
 
@@ -133,13 +132,15 @@ Play on your own with the data you've imported. Test the **following functions**
 ```
 
 Explore the data, find the dataset lenght and the minimum and maximum of a variable.
+
 ```{r}
 # TBC
 ```
 
-
 ### 6. Access your variables:
+
 There are multiple ways to **access the variables of a dataset**. Generally by index or by name. Remember R indexes from 1 (Python indexes from 0).
+
 ```{r}
 # datasetName$datasetVariable
 # TBC
@@ -150,40 +151,44 @@ There are multiple ways to **access the variables of a dataset**. Generally by i
 # TBC
 ```
 
-
 ### 7. Plot your variables:
+
 Prepare a **plot of a variable**, you can choose an histogram, boxplot, barplot, scatterplot, etc. Choose a plot and try to make it here:
+
 ```{r}
 #TBC
 ```
 
 Creating a **good visualization is an art**. You can see some examples here: <https://www.r-graph-gallery.com/>
 
-
 ### 8. Common problems
-- Missing data. What is missing data? It depends on the experiment. Usually labeled as "NAs" --\> Use na.action() or na.rm(). Very common for certain analysis: df <- df[complete.cases(df), ]
 
-- I have categorical variables classified as numbers--\> Transform it into a factor with as.factor(). Check always your variable type with str().
+-   Missing data. What is missing data? It depends on the experiment. Usually labeled as "NAs" --\> Use na.action() or na.rm(). Very common for certain analysis: df \<- df[complete.cases(df), ]
 
-- I have a warning and I don't understand why --\> Paste the warning in google
+-   I have categorical variables classified as numbers--\> Transform it into a factor with as.factor(). Check always your variable type with str().
 
-- A package is not working --\> Is it activated (library)? It may be out of date? Re-install it.
+-   I have a warning and I don't understand why --\> Paste the warning in google
 
+-   A package is not working --\> Is it activated (library)? It may be out of date? Re-install it.
 
 ### 9. Your Data Science project
 
 To learn while working on a real data science problem I purpose here that you **find a dataset** that you have a particular interest on and use it for the upcoming sessions. This will help us find real problems that need to be solved with diverse data science tools. Data is more available than ever. You can both create a dataset of your own (it must include at least 50 observations and five categorical and/or numerical variables) or choose a public dataset online. Here you can find some dataset repositories:
 
-- Kaggle: <https://www.kaggle.com/datasets>
+-   Kaggle: <https://www.kaggle.com/datasets>
 
-- UCI: <https://archive.ics.uci.edu/ml/index.php>
+-   UCI: <https://archive.ics.uci.edu/ml/index.php>
 
-- UK Open Data: <https://www.data.gov.uk/search?filters%5Btopic%5D=Environment>
+-   UK Open Data: <https://www.data.gov.uk/search?filters%5Btopic%5D=Environment>
 
-- Data.world: <https://data.world/datasets/environment>
+-   Data.world: <https://data.world/datasets/environment>
 
 Choose a dataset, download it and **for the next session**:
 
-- 1. Write a RScript to import the dataset
+-   
 
-- 2. Identify a numerical and a categorical variables from your dataset.
+    1.  Write a RScript to import the dataset
+
+-   
+
+    2.  Identify a numerical and a categorical variables from your dataset.

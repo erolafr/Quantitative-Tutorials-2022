@@ -107,7 +107,7 @@ matrix, list, dataframe. See illustration from
 
 - Get used to **R markdown files** type
 
-- Did you know about **[GitHub](https://github.com/erolafr)**?
+- Did you know about [**GitHub**](https://github.com/erolafr)?
 
 ### 4. Starting hard: Import your data
 

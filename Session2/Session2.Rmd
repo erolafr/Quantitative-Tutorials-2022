@@ -32,7 +32,14 @@ Non-excluent data visualization aims:
 
 -   Expose results
 
--   Communicate data effectively
+-   Communicate: communicate an idea or a result of an analysis. Images communicate better than tables.
+
+- Explore: Exploratory data analysis (EDA) benefits from data visualization as they help understand the nature and characteristics of a variable set. Interactive visualizations are very useful to explore better the data following successive questioning. 
+
+- Data in its context: understand the value of a particular information within its context, for example a company's number of total sells in a ranking.
+
+- Find patterns and outliers: for example seek seasonality dynamics, hidden maps, extreme values, etc.
+
 
 ### 3. How to create a good visualization
 

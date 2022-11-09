@@ -30,6 +30,11 @@ via email your plot in a word file with a figure caption** that
 describes it with enough detail. To help you with this I prepared this
 document.
 
+Writting a good figure caption is not an easy work. Find a scientific article you like and analyse with details the authors include in the figure caption. See here an example from [Fenollosa et al. (2020)](https://plantmethods.biomedcentral.com/articles/10.1186/s13007-020-00607-3).
+
+![image](https://user-images.githubusercontent.com/31477298/200793324-af6afd3d-54e4-4e38-ba03-b063be0cf9f3.png)
+
+
 ### 1. Data visualization is an art
 
 Data visualization in biology is extremely necessary (Wong, 2012:

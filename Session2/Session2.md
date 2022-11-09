@@ -26,7 +26,7 @@ In addition to that, before the next session it is required that you
 **build the code to import that dataset** into R and **prepare a
 significant plot form it**. It could be any plot: a map, an histogram, a
 boxplot, a scatterplot, a barplot, etc. I will ask you to **send to me
-via email your plot in a word file with a figure caption** that
+via email your code and your plot in a word file with a figure caption** that
 describes it with enough detail. To help you with this I prepared this
 document.
 

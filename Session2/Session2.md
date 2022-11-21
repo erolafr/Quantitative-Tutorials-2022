@@ -26,14 +26,17 @@ In addition to that, before the next session it is required that you
 **build the code to import that dataset** into R and **prepare a
 significant plot form it**. It could be any plot: a map, an histogram, a
 boxplot, a scatterplot, a barplot, etc. I will ask you to **send to me
-via email your code and your plot in a word file with a figure caption** that
-describes it with enough detail. To help you with this I prepared this
-document.
+via email your code and your plot in a word file with a figure caption**
+that describes it with enough detail. To help you with this I prepared
+this document.
 
-Writting a good figure caption is not an easy work. Find a scientific article you like and analyse with details the authors include in the figure caption. See here an example from [Fenollosa et al. (2020)](https://plantmethods.biomedcentral.com/articles/10.1186/s13007-020-00607-3).
+Writting a good figure caption is not an easy work. Find a scientific
+article you like and analyse with details the authors include in the
+figure caption. See here an example from [Fenollosa et
+al. (2020)](https://plantmethods.biomedcentral.com/articles/10.1186/s13007-020-00607-3).
 
-![image](https://user-images.githubusercontent.com/31477298/200793324-af6afd3d-54e4-4e38-ba03-b063be0cf9f3.png)
-
+![Figure example from Fenollosa et al.,
+2020](https://user-images.githubusercontent.com/31477298/200793324-af6afd3d-54e4-4e38-ba03-b063be0cf9f3.png)
 
 ### 1. Data visualization is an art
 

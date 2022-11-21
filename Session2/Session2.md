@@ -53,6 +53,9 @@ Remember you can find R code to prepare those graph types here:
 
 Non-exclusive data visualization aims:
 
+- **Communicate**: Communicate an idea or a result of an analysis.
+  Impactful visualizations communicate more efficiently.
+
 - **Explore**: Exploratory data analysis (EDA) benefits from data
   visualization as they help understand the nature and characteristics
   of a variable set. Interactive visualizations are very useful to

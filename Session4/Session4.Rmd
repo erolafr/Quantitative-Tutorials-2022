@@ -64,8 +64,8 @@ After describing the research question and hypotheses let's prepare the data for
 
 ```{r}
 # Ensure your factors are actually factors for R
- <- as.factor()
-<- as.factor()
+# <- as.factor()
+#<- as.factor()
 ```
 
 
@@ -75,7 +75,7 @@ After describing the research question and hypotheses let's prepare the data for
 
 ```{r}
 # Get a general overview of the data
-summary()
+#summary()
 ```
 
 ```{r}

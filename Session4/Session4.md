@@ -9,18 +9,137 @@ Dr. Erola Fenollosa (she/her)
 
 ### 1. Introduction
 
-The aim of this tutorial
+The aim of this tutorial is to perform and understand your first two-way
+ANOVA. A two-way ANOVA is nothing more than an ANOVA with two factors,
+this is two categorical variables. It is a very useful tool when we want
+to evaluate the influence of two categorical variables and their
+interaction on a numerical variable.
+
+For example, we performed an experiment of monitoring nutrient addition
+responses on plants and evaluate their photosynthetic rate at different
+times. We expect that the treatment (control / adding nutrients) factor
+affects the photosynthetic rate and that this effect gets bigger with
+time, so when we measure plants after two weeks we see higher
+differences between treatments than after one week. In this example we
+have two factors: Treatment (with two levels: control and adding
+nutrients) and Time (with three levels: one week, two weeks, three
+weeks). Those factors are crossed because every category (level) of one
+factor co-occurs in the design with every category of the other factor,
+in other words, all times have information on all treatments and all
+treatments information on all times.
+
+When we have a two-way crossed ANOVA we have a new element: the
+interaction. In ANOVA, the interaction is defined as when the difference
+in the means of the response between the levels of one factor is not the
+same across all levels of another factor. For example, if the effect of
+the treatment increases with time it means the interaction is
+significant, so the effect of a factor is influenced by the other.
+
+In this script you’ll find a compendium of exercises to code and explain
+the different required steps to code a two-way anova. Fill all exercises
+including comments when required, a “TO DO” will help you identify the
+parts to fill.
 
 ### 2. Import data and load packages
 
+Open Top chambers
+
+Temperature Altered precipitation One species one time
+
+Include pictures
+
+``` r
+# Load packages
+library(readxl)
+```
+
+``` r
+# Data import (ensure the csv file is at the same folder as this Rmd)
+```
+
 ### 3. Research question
+
+TODO 3.1: The research question we want to solve is: … ?
+
+TODO 3.2: The hypothesis are:
+
+To solve this hypothesis we will perform a two way ANOVA with the fixed
+factors: Temperature and Rainfall on the continuous variable of seedling
+height (cm).
 
 ### 4. Prepare the data
 
+After describing the research question and hypotheses let’s prepare the
+data for the analysis.
+
+``` r
+# Ensure your factors are actually factors for R
+# <- as.factor()
+#<- as.factor()
+```
+
+``` r
+# Check if we have missing values
+```
+
+``` r
+# Get a general overview of the data
+#summary()
+```
+
+``` r
+# Visualize the results to see if our hypotheses make sense
+```
+
 ### 5. ANOVA Assumptions
+
+Let’s check if our data meet ANOVA requirements: data normality (our
+continuous variable data is normally distributed) and homocedasticity
+(groups have equal variances).
+
+``` r
+# TODO 5.1: Check normal distribution
+```
+
+``` r
+# TODO 5.2: Check homocedasticity 
+```
+
+TODO 5.3. What results did you obtain? What do they mean?
 
 ### 6. Two-way fixed crossed ANOVA
 
+We are going to perform now the two-way ANOVA:
+
+TODO 6.1. What is this line of code above doing? Explain it with your
+own words
+
+TODO 6.2. Is there any p-value under 0.05? What does it mean?
+
 ### 7. Post hoc
 
-### 8. Conclusions
+``` r
+# TODO 7.1: FOR Temperature
+```
+
+``` r
+# TODO 7.2: FOR Rainfall
+```
+
+``` r
+# TODO 7.3: Interaction
+```
+
+TODO 7.4. Is there any p-value under 0.05? What does it mean?
+
+### 8. Further questions
+
+- How would you compare if different species respond differently?
+- And how would you compare the effect of time?
+
+### 9. Conclusions
+
+TODO 9.1 Write down the conclusions of this work. Expose if the ANOVA
+requirements were meet, the ANOVA results, their meaning, if we should
+accept the hypotheses or not, and specially what does this result mean
+for the climate change research.

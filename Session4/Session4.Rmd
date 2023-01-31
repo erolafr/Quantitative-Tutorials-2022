@@ -62,6 +62,27 @@ To solve this hypothesis we will perform a two way ANOVA with the fixed factors:
 ### 4. Prepare the data
 After describing the research question and hypotheses let's prepare the data for the analysis.
 
+```{r}
+# Ensure your factors are actually factors for R
+ <- as.factor()
+<- as.factor()
+```
+
+
+```{r}
+# Check if we have missing values
+```
+
+```{r}
+# Get a general overview of the data
+summary()
+```
+
+```{r}
+# Visualize the results to see if our hypotheses make sense
+
+```
+
 
 ### 5. ANOVA Assumptions
 Let's check if our data meet ANOVA requirements: data normality (our continuous variable data is normally distributed) and homocedasticity (groups have equal variances).

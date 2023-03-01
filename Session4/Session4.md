@@ -5,7 +5,7 @@
 
 Dr. Erola Fenollosa (she/her)
 
-\*\*/1/2023
+2/3/2023
 
 ### 1. Introduction
 
@@ -55,13 +55,31 @@ library(readxl)
 
 ``` r
 # Data import (ensure the csv file is at the same folder as this Rmd)
+setwd("~/Quantitative-Tutorials-2022") # Delete if not useful
+cyp <- read_excel("Session4/OTC_Cyperus.xlsx")
 ```
+
+Show the first 10 rows of the dataset:
+
+``` r
+# TODO 2.1
+```
+
+Revise the structure of the dataset to check that all numerical
+variables have been registered as so:
+
+``` r
+# TODO 2.2
+```
+
+TODO 2.3: Why is a variable called “TEMPRAINFALL”? Why do you think it
+could be useful?
 
 ### 3. Research question
 
 TODO 3.1: The research question we want to solve is: … ?
 
-TODO 3.2: The hypothesis are:
+TODO 3.2: The hypothesis are: (justify your guess)
 
 To solve this hypothesis we will perform a two way ANOVA with the fixed
 factors: Temperature and Rainfall on the continuous variable of seedling
@@ -72,23 +90,28 @@ height (cm).
 After describing the research question and hypotheses let’s prepare the
 data for the analysis.
 
+Transform the categorical variables into factors:
+
 ``` r
-# Ensure your factors are actually factors for R
+# TODO 4.1
 # <- as.factor()
 #<- as.factor()
 ```
 
 ``` r
+# TODO 4.2
 # Check if we have missing values
 ```
 
 ``` r
+# TODO 4.3
 # Get a general overview of the data
 #summary()
 ```
 
 ``` r
-# Visualize the results to see if our hypotheses make sense
+# TODO 4.4
+# Visualize the results to see if our hypotheses make sense, you could use for example a boxplot.
 ```
 
 ### 5. ANOVA Assumptions
@@ -111,23 +134,35 @@ TODO 5.3. What results did you obtain? What do they mean?
 
 We are going to perform now the two-way ANOVA:
 
-TODO 6.1. What is this line of code above doing? Explain it with your
+``` r
+# TODO 6.1 REPLACE "VARIABLE" By your variable of interest: Height or An
+
+#res.aov2 <- aov(VARIABLE ~ Temperature*Rainfall, data = cyp)
+#summary(res.aov2)
+```
+
+TODO 6.2. What is this line of code above doing? Explain it with your
 own words
 
-TODO 6.2. Is there any p-value under 0.05? What does it mean?
+TODO 6.3. Is there any p-value under 0.05? What does it mean?
 
 ### 7. Post hoc
 
+For temperature:
+
 ``` r
-# TODO 7.1: FOR Temperature
+# TODO 7.1: Run the following code:
+# TukeyHSD(res.aov2, which = "Temperature")
 ```
 
 ``` r
-# TODO 7.2: FOR Rainfall
+# TODO 7.2: FOR Rainfall, complete:
+# TukeyHSD()
 ```
 
 ``` r
-# TODO 7.3: Interaction
+# TODO 7.3: Interaction, complete:
+# TukeyHSD()
 ```
 
 TODO 7.4. Is there any p-value under 0.05? What does it mean?
@@ -139,7 +174,8 @@ TODO 7.4. Is there any p-value under 0.05? What does it mean?
 
 ### 9. Conclusions
 
-TODO 9.1 Write down the conclusions of this work. Expose if the ANOVA
-requirements were meet, the ANOVA results, their meaning, if we should
-accept the hypotheses or not, and specially what does this result mean
-for the climate change research.
+TODO 9.1 Write down the conclusions of this work as bullet points.
+Expose if the ANOVA requirements were meet, the ANOVA results, their
+meaning, if we should accept the hypotheses or not, and specially what
+does this result mean for the climate change research. Why do you think
+this species showed this behavior?

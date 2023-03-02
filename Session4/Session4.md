@@ -1,7 +1,7 @@
 
 # Session 3 - Quantitative Tutorials
 
-## Week 4 - ANOVA II
+## ANOVA II
 
 Dr. Erola Fenollosa (she/her)
 
